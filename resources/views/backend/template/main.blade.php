@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!-- Primary Meta Tags -->
-    <title>Yummy Panel - @yield('title')</title>
+    <title>Kanal Panel - @yield('title')</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="title" content="Volt - Free Bootstrap 5 Dashboard">
@@ -34,21 +34,20 @@
         content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-pro-bootstrap-5-dashboard/volt-pro-preview.jpg">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="120x120"
-        href="{{ asset('backend') }}/assets/img/favicon/apple-touch-icon.png">
+    {{-- <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('backend') }}/assets/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32"
         href="{{ asset('backend') }}/assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16"
         href="{{ asset('backend') }}/assets/img/favicon/favicon-16x16.png">
     <link rel="manifest" href="{{ asset('backend') }}/assets/img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="{{ asset('backend') }}/assets/img/favicon/safari-pinned-tab.svg"
-        color="#ffffff">
+    <link rel="mask-icon" href="{{ asset('backend') }}/assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#ffffff"> --}}
+    <link href="{{ asset('frontend') }}/img/favicon.png" rel="icon">
+    <link href="{{ asset('frontend') }}/img/favicon.png" rel="apple-touch-icon">
 
     <!-- Sweet Alert -->
-    <link type="text/css" href="{{ asset('backend') }}/vendor/sweetalert2/dist/sweetalert2.min.css"
-        rel="stylesheet">
+    <link type="text/css" href="{{ asset('backend') }}/vendor/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet">
 
     <!-- Notyf -->
     <link type="text/css" href="{{ asset('backend') }}/vendor/notyf/notyf.min.css" rel="stylesheet">
@@ -57,7 +56,7 @@
     <link type="text/css" href="{{ asset('backend/assets') }}/css/volt.css" rel="stylesheet">
 
     {{-- fontawesome --}}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 
     @stack('css')
 </head>
@@ -69,8 +68,8 @@
 
     <main class="content">
 
-       {{-- navbar --}}
-       @include('backend.template.navbar')
+        {{-- navbar --}}
+        @include('backend.template.navbar')
 
         {{-- Main Content --}}
         @yield('content')
@@ -78,11 +77,12 @@
         <footer class="bg-white rounded shadow p-5 mb-4 mt-4">
             <div class="row">
                 <div class="col-12 col-md-4 col-xl-6 mb-4 mb-md-0">
-                    <p class="mb-0 text-center text-lg-start">© 2019-<span class="current-year"></span> <a
-                            class="text-primary fw-normal" href="https://themesberg.com" target="_blank">Themesberg</a>
+                    <p class="mb-0 text-center text-lg-start">© 2024-<span class="current-year"></span> <a
+                            class="text-primary fw-normal" href="https://themesberg.com" target="_blank">Muh. Alif
+                            Anhar</a>
                     </p>
                 </div>
-                <div class="col-12 col-md-8 col-xl-6 text-center text-lg-start">
+                {{-- <div class="col-12 col-md-8 col-xl-6 text-center text-lg-start">
                     <!-- List -->
                     <ul class="list-inline list-group-flush list-group-borderless text-md-end mb-0">
                         <li class="list-inline-item px-0 px-sm-2">
@@ -98,7 +98,7 @@
                             <a href="https://themesberg.com/contact">Contact</a>
                         </li>
                     </ul>
-                </div>
+                </div> --}}
             </div>
         </footer>
     </main>
@@ -114,18 +114,14 @@
     <script src="{{ asset('backend') }}/vendor/nouislider/distribute/nouislider.min.js"></script>
 
     <!-- Smooth scroll -->
-    <script src="{{ asset('backend') }}/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js">
-    </script>
+    <script src="{{ asset('backend') }}/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 
     <!-- Charts -->
     <script src="{{ asset('backend') }}/vendor/chartist/dist/chartist.min.js"></script>
-    <script
-        src="{{ asset('backend') }}/vendor/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js">
-    </script>
+    <script src="{{ asset('backend') }}/vendor/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
 
     <!-- Datepicker -->
-    <script src="{{ asset('backend') }}/vendor/vanillajs-datepicker/dist/js/datepicker.min.js">
-    </script>
+    <script src="{{ asset('backend') }}/vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script>
 
     <!-- Sweet Alerts 2 -->
     <script src="{{ asset('backend') }}/vendor/sweetalert2/dist/sweetalert2.all.min.js"></script>
@@ -134,8 +130,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
 
     <!-- Vanilla JS Datepicker -->
-    <script src="{{ asset('backend') }}/vendor/vanillajs-datepicker/dist/js/datepicker.min.js">
-    </script>
+    <script src="{{ asset('backend') }}/vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script>
 
     <!-- Notyf -->
     <script src="{{ asset('backend') }}/vendor/notyf/notyf.min.js"></script>
@@ -153,4 +148,3 @@
 </body>
 
 </html>
-

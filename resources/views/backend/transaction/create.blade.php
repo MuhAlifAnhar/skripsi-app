@@ -25,7 +25,7 @@
         <div class="d-flex justify-content-between w-100 flex-wrap">
             <div class="mb-3 mb-lg-0">
                 <h1 class="h4">Create Menu</h1>
-                <p class="mb-0">Tambah Menu Yummy Restoran</p>
+                <p class="mb-0">Tambah Menu Kanal Social Space</p>
             </div>
             <div>
                 <a href="{{ route('panel.menu.index') }}" class="btn btn-outline-gray-600 d-inline-flex align-items-center">
@@ -65,7 +65,8 @@
                     <div class="col-md-6">
                         <div class="mb-3">
                             <label for="category_id">Category</label>
-                            <select name="category_id" id="category_id" class="form-select @error('category_id') is-invalid @enderror">
+                            <select name="category_id" id="category_id"
+                                class="form-select @error('category_id') is-invalid @enderror">
                                 <option value="">-- select category --</option>
                                 @foreach ($categories as $category)
                                     <option value="{{ $category->id }}">{{ $category->title }}</option>

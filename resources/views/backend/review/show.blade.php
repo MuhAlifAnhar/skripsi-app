@@ -25,7 +25,7 @@
         <div class="d-flex justify-content-between w-100 flex-wrap">
             <div class="mb-3 mb-lg-0">
                 <h1 class="h4">Review: {{ $review->transaction->code }}</h1>
-                <p class="mb-0">Menu: {{ $review->transaction->code }} Yummy Restoran</p>
+                <p class="mb-0">Menu: {{ $review->transaction->code }} Kanal Social Space</p>
             </div>
             <div>
                 <a href="{{ route('panel.review.index') }}" class="btn btn-outline-gray-600 d-inline-flex align-items-center">

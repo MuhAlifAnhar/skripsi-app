@@ -25,7 +25,7 @@
         <div class="d-flex justify-content-between w-100 flex-wrap">
             <div class="mb-3 mb-lg-0">
                 <h1 class="h4">Event: {{ $event->name }}</h1>
-                <p class="mb-0">Event: {{ $event->name }} Yummy Restoran</p>
+                <p class="mb-0">Event: {{ $event->name }} Kanal Social Space</p>
             </div>
             <div>
                 <a href="{{ route('panel.event.index') }}"

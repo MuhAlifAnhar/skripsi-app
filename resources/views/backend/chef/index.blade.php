@@ -24,7 +24,7 @@
         <div class="d-flex justify-content-between w-100 flex-wrap">
             <div class="mb-3 mb-lg-0">
                 <h1 class="h4">Chef</h1>
-                <p class="mb-0">Daftar Chef Yummy Restoran</p>
+                <p class="mb-0">Daftar Chef Kanal Social Space</p>
             </div>
             @can('isOperator')
                 <div>

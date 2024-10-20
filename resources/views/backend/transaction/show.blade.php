@@ -42,7 +42,7 @@
             <table class="table table-striped">
                 <tr>
                     <th>Date/time</th>
-                    <td>: {{ date('d-m-Y', strtotime($transaction->date)) }} /  {{ $transaction->time }}</td>
+                    <td>: {{ date('d-m-Y', strtotime($transaction->date)) }} / {{ $transaction->time }}</td>
                 </tr>
 
                 <tr>
@@ -118,10 +118,36 @@
                 @endisset
             </table>
 
+            {{-- <div class="float-end mt-2">
+                <a href="{{ route('panel.transaction.edit', $transaction->uuid) }}" class="btn btn-warning"><i
+                        class="fas fa-edit"></i>
+                    Edit</a>
+            </div> --}}
+
             <div class="float-end mt-2">
-                <a href="" class="btn btn-warning"><i
-                        class="fas fa-edit"></i> Confirm</a>
+                <button type="button" class="btn btn-warning" onclick="confirmModal(this)"
+                    data-uuid="{{ $transaction->uuid }}">
+                    <i class="fas fa-edit"> Confirm</i>
+                </button>
             </div>
         </div>
     </div>
+
+    @include('backend.transaction._modal-confirm')
+
 @endsection
+
+@push('js')
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        const confirmModal = (e) => {
+            let uuid = e.getAttribute('data-uuid')
+
+            // set action form
+            $('#confirmForm').attr('action', `/panel/transaction/${uuid}`)
+            $('#confirmModal').modal('show')
+        }
+    </script>
+@endpush

@@ -25,7 +25,7 @@
         <div class="d-flex justify-content-between w-100 flex-wrap">
             <div class="mb-3 mb-lg-0">
                 <h1 class="h4">Image: {{ $image->name }}</h1>
-                <p class="mb-0">Image: {{ $image->name }} Yummy Restoran</p>
+                <p class="mb-0">Image: {{ $image->name }} Kanal Social Space</p>
             </div>
             <div>
                 <a href="{{ route('panel.image.index') }}"

@@ -25,7 +25,7 @@
         <div class="d-flex justify-content-between w-100 flex-wrap">
             <div class="mb-3 mb-lg-0">
                 <h1 class="h4">Edit Chef</h1>
-                <p class="mb-0">Ubah Chef Yummy Restoran</p>
+                <p class="mb-0">Ubah Chef Kanal Social Space</p>
             </div>
             <div>
                 <a href="{{ route('panel.chef.index') }}" class="btn btn-outline-gray-600 d-inline-flex align-items-center">
@@ -53,7 +53,8 @@
                         <div class="mb-3">
                             <label for="name">Name</label>
                             <input type="text" name="name" id="name"
-                                class="form-control @error('name') is-invalid @enderror" value="{{ old('name', $chef->name) }}">
+                                class="form-control @error('name') is-invalid @enderror"
+                                value="{{ old('name', $chef->name) }}">
 
                             @error('name')
                                 <span class="invalid-feedback" role="alert">
@@ -69,9 +70,14 @@
                             <select name="position" id="position"
                                 class="form-select @error('position') is-invalid @enderror">
                                 <option value="" hidden>-- select position --</option>
-                                <option value="Master Chef" {{ old('position', $chef->position) == 'Master Chef' ? 'selected' : ''}}>Master Chef</option>
-                                <option value="Patissier" {{ old('position', $chef->position) == 'Patissier' ? 'selected' : ''}}>Patissier</option>
-                                <option value="Chef" {{ old('position', $chef->position) == 'Chef' ? 'selected' : ''}}>Chef</option>
+                                <option value="Master Chef"
+                                    {{ old('position', $chef->position) == 'Master Chef' ? 'selected' : '' }}>Master Chef
+                                </option>
+                                <option value="Patissier"
+                                    {{ old('position', $chef->position) == 'Patissier' ? 'selected' : '' }}>Patissier
+                                </option>
+                                <option value="Chef" {{ old('position', $chef->position) == 'Chef' ? 'selected' : '' }}>
+                                    Chef</option>
                             </select>
 
                             @error('position')

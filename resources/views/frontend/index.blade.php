@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Yummy Restaurant</title>
+    <title>Kanal Social Space</title>
     <meta name="description" content="Yummy Restaurant">
     <meta name="keywords" content="Yummy Restaurant">
 
     <!-- Favicons -->
     <link href="{{ asset('frontend') }}/img/favicon.png" rel="icon">
-    <link href="{{ asset('frontend') }}/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="{{ asset('frontend') }}/img/favicon.png" rel="apple-touch-icon">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -52,7 +52,7 @@
             <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
                 <!-- <img src="{{ asset('frontend') }}/img/logo.png" alt=""> -->
-                <h1 class="sitename">Yummy</h1>
+                <h1 class="sitename">KL</h1>
                 <span>.</span>
             </a>
 
@@ -83,14 +83,17 @@
             <div class="container">
                 <div class="row gy-4 justify-content-center justify-content-lg-between">
                     <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                        <h1 data-aos="fade-up">Enjoy Your Healthy<br>Delicious Food</h1>
-                        <p data-aos="fade-up" data-aos-delay="100">We are team of talented designers making websites
-                            with Bootstrap</p>
+                        <h1 data-aos="fade-up">Kanal Social Space</h1>
+                        <h4 data-aos="fade-up">Coffee - Mocktail & Food</h4>
+                        <p data-aos="fade-up" data-aos-delay="100">Ini adalah ruang untuk berbagi cerita, inspirasi, dan
+                            momen santai bersama teman-teman. Dari aroma kopi yang menggugah hingga lingkungan yang
+                            cozy, kami siap menjadi destinasi hangout favoritmu!</p>
                         <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-                            <a href="#book-a-table" class="btn-get-started">Booka a Table</a>
-                            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
-                                class="glightbox btn-watch-video d-flex align-items-center"><i
-                                    class="bi bi-play-circle"></i><span>Watch Video</span></a>
+                            <a href="#book-a-table" class="btn-get-started" data-bs-toggle="modal"
+                                data-bs-target="#modalBook">Booka a Table</a>
+                            <a href="https://maps.app.goo.gl/8ayNe4fZyFBJXL8U9"
+                                class="btn-watch-video d-flex align-items-center" target="_blank"><i
+                                    class="bi bi-geo-alt"></i><span>Lihat Lokasi</span></a>
                         </div>
                     </div>
                     <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
@@ -166,7 +169,7 @@
 
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="why-box">
-                            <h3>Why Choose Yummy</h3>
+                            <h3>Why Choose Kanal</h3>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
@@ -493,7 +496,8 @@
         </div>
 
         <div class="container copyright text-center mt-4">
-            <p>© <span>Copyright</span> <strong class="px-1 sitename">Yummy</strong> <span>All Rights Reserved</span>
+            <p>© <span>Copyright</span> <strong class="px-0 sitename">Muh. Alif Anhar</strong> <span>All Rights
+                    Reserved</span>
             </p>
             <div class="credits">
                 <!-- All the links in the footer should remain intact. -->
@@ -550,7 +554,6 @@
             })
         }
     </script>
-
 </body>
 
 </html>

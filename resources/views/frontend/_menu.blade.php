@@ -4,7 +4,7 @@
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>Our Menu</h2>
-        <p><span>Check Our</span> <span class="description-title">Yummy Menu</span></p>
+        <p><span>Check Our</span> <span class="description-title">Kanal Menu</span></p>
     </div><!-- End Section Title -->
 
     <div class="container">
@@ -50,8 +50,8 @@
 
                     @foreach ($menu_starter as $starter)
                         <div class="col-lg-4 menu-item">
-                            <a href="{{ asset('storage/'. $starter->image) }}" class="glightbox">
-                                <img src="{{ asset('storage/'. $starter->image) }}" class="menu-img img-fluid"
+                            <a href="{{ asset('storage/' . $starter->image) }}" class="glightbox">
+                                <img src="{{ asset('storage/' . $starter->image) }}" class="menu-img img-fluid"
                                     alt="{{ $starter->name }}"></a>
                             <h4>{{ $starter->name }}</h4>
                             <p class="ingredients">
@@ -78,8 +78,8 @@
 
                     @foreach ($menu_breakfast as $breakfast)
                         <div class="col-lg-4 menu-item">
-                            <a href="{{ asset('storage/'. $breakfast->image) }}" class="glightbox">
-                                <img src="{{ asset('storage/'. $breakfast->image) }}" class="menu-img img-fluid"
+                            <a href="{{ asset('storage/' . $breakfast->image) }}" class="glightbox">
+                                <img src="{{ asset('storage/' . $breakfast->image) }}" class="menu-img img-fluid"
                                     alt="{{ $breakfast->name }}"></a>
                             <h4>{{ $breakfast->name }}</h4>
                             <p class="ingredients">
@@ -105,8 +105,8 @@
 
                     @foreach ($menu_lunch as $lunch)
                         <div class="col-lg-4 menu-item">
-                            <a href="{{ asset('storage/'. $lunch->image) }}" class="glightbox">
-                                <img src="{{ asset('storage/'. $lunch->image) }}" class="menu-img img-fluid"
+                            <a href="{{ asset('storage/' . $lunch->image) }}" class="glightbox">
+                                <img src="{{ asset('storage/' . $lunch->image) }}" class="menu-img img-fluid"
                                     alt="{{ $lunch->name }}"></a>
                             <h4>{{ $lunch->name }}</h4>
                             <p class="ingredients">
@@ -132,8 +132,8 @@
 
                     @foreach ($menu_dinner as $dinner)
                         <div class="col-lg-4 menu-item">
-                            <a href="{{ asset('storage/'. $dinner->image) }}" class="glightbox">
-                                <img src="{{ asset('storage/'. $dinner->image) }}" class="menu-img img-fluid"
+                            <a href="{{ asset('storage/' . $dinner->image) }}" class="glightbox">
+                                <img src="{{ asset('storage/' . $dinner->image) }}" class="menu-img img-fluid"
                                     alt="{{ $dinner->name }}"></a>
                             <h4>{{ $dinner->name }}</h4>
                             <p class="ingredients">

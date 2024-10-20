@@ -25,7 +25,7 @@
         <div class="d-flex justify-content-between w-100 flex-wrap">
             <div class="mb-3 mb-lg-0">
                 <h1 class="h4">Edit Image</h1>
-                <p class="mb-0">Ubah Gambar Yummy Restoran</p>
+                <p class="mb-0">Ubah Gambar Kanal Social Space</p>
             </div>
             <div>
                 <a href="{{ route('panel.image.index') }}"
@@ -89,7 +89,8 @@
                         class="form-control  @error('file') is-invalid @enderror">
 
                     <div>
-                        <img src="{{ asset('storage/' . $image->file) }}" alt="" class="img-fluid mt-3" width="15%">
+                        <img src="{{ asset('storage/' . $image->file) }}" alt="" class="img-fluid mt-3"
+                            width="15%">
                     </div>
 
                     @error('file')

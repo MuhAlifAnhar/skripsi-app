@@ -41,7 +41,7 @@
             </div>
         </div>
 
-        <h2>5 Transaksi Terbaru</h2>
+        <h2>Transaksi Terbaru</h2>
         <table class="table table-striped">
             <thead>
                 <tr>
